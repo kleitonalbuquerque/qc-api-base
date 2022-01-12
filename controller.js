@@ -6,7 +6,7 @@ const { db } = config;
 
 exports.buscarTemplate = async function (req, res, next) {
   const cql = cqlBuscarTemplate();
-  result = db.execute(cql);
+  result = await db.execute(cql);
   res.send(result);
 };
 
