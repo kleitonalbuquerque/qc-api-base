@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@qualitech/qmssql": "0.0.2",
-    "@qualitech/qneo4j": "^0.4.0",
+    "@qualitech/qneo4j": "^4.4.1",
     "axios": "^0.22.0",
     "circular-json": "^0.5.5",
     "fs": "0.0.1-security",

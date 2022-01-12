@@ -1,0 +1,2 @@
+"-";"::1";"-";"[2022-01-12T17:56:30.852Z]";"POST";"/api-base/criar-template";"HTTP/1.1";"500";"2";"-";"Thunder Client (https://www.thunderclient.io)";"-";"-";"
+"-";"::1";"-";"[2022-01-12T17:59:19.792Z]";"GET";"/api-base/criar-template";"HTTP/1.1";"200";"23";"-";"Thunder Client (https://www.thunderclient.io)";"-";"-";"

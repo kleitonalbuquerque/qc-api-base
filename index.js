@@ -7,16 +7,13 @@ async function startup() {
   try {
     console.log("Iniciando o módulo api-ocorrencias web server");
 
-    controller.server.listen(
-      appConfigs.configs.api_base.http_port,
-      function () {
-        console.log(
-          "%s módulo iniciado em %s",
-          controller.server.name,
-          controller.server.url
-        );
-      }
-    );
+    controller.server.listen(appConfigs.configs.http_port, function () {
+      console.log(
+        "%s módulo iniciado em %s",
+        controller.server.name,
+        controller.server.url
+      );
+    });
   } catch (err) {
     console.log("Erro ao iniciar api api-ocorrencias.");
     console.error(err);

@@ -8,19 +8,19 @@ const cors = corsMiddleware({
   allowHeaders: ["*"],
 });
 
-const server = restify.createServer()
+const server = restify.createServer();
 
-server.pre(cors.preflight)
-server.use(cors.actual)
-server.use(api_log)
-server.use(restify.plugins.fullResponse())
-server.use(restify.plugins.bodyParser())
-server.use(restify.plugins.queryParser())
+server.pre(cors.preflight);
+server.use(cors.actual);
+server.use(api_log);
+server.use(restify.plugins.fullResponse());
+server.use(restify.plugins.bodyParser());
+server.use(restify.plugins.queryParser());
 
-server.post(
+server.get(
   "/api-base/criar-template",
   // service.validarToken,
-  api_controller.criarOcorrencia
-)
+  api_controller.buscarTemplate
+);
 
-exports.server = server
+exports.server = server;
