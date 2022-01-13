@@ -25,5 +25,8 @@
     "restify-cors-middleware": "^1.1.1",
     "restify-https": "0.0.3",
     "rotating-file-stream": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
